@@ -49,7 +49,6 @@
   <ItemGroup>
     <Compile Include="Cvor.cs" />
     <Compile Include="ParoviStruja.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Proracuni.cs" />
     <Compile Include="Vod.cs" />
