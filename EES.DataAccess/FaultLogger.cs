@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace EES.DataAccess
 {
-    public class Class1
+    public class FaultLogger
     {
+        public void InsertFaultLog(List<int> PrimaryLocations, List<int> SecondaryLocations)
+        {
+
+        }
     }
 }
