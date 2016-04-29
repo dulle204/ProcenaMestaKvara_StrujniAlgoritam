@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using EES.DataAccess;
+using System.Collections.Generic;
 
 namespace EES
 {
@@ -60,7 +61,7 @@ namespace EES
                     listaSekundarnihLokacija.Add(item.IndexDeonice);
                 }
             }
-
+            new FaultLogger().InsertFaultLog(retList, listaSekundarnihLokacija);
             return retList;
         }
     }
