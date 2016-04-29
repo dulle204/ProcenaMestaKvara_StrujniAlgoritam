@@ -9,7 +9,7 @@ namespace EES.DataAccess
 {
     public class FaultLogger
     {
-        public void InsertFaultLog(List<int> PrimaryLocations, List<int> SecondaryLocations)
+        public void InsertFaultLog(List<int> PrimaryLocations, List<int> SecondaryLocations, double current)
         {
             using (SqlConnection conn = new SqlConnection(DBConnection.GetConnectionString)) 
             {
@@ -34,9 +34,13 @@ namespace EES.DataAccess
                     SqlParameter timeStamp = new SqlParameter("TimeStamp", System.Data.SqlDbType.DateTime);
                     timeStamp.Value = DateTime.Now;
 
+                    SqlParameter I = new SqlParameter("Current", System.Data.SqlDbType.Decimal);
+                    I.Value = current;
+
                     cmd.Parameters.Add(primaryLocations);
                     cmd.Parameters.Add(secondaryLocations);
                     cmd.Parameters.Add(timeStamp);
+                    cmd.Parameters.Add(I);
 
                     cmd.ExecuteNonQuery();
                 }

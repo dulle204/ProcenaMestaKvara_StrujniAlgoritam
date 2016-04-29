@@ -61,7 +61,7 @@ namespace EES
                     listaSekundarnihLokacija.Add(item.IndexDeonice);
                 }
             }
-            new FaultLogger().InsertFaultLog(retList, listaSekundarnihLokacija);
+            new FaultLogger().InsertFaultLog(retList, listaSekundarnihLokacija, izmerenaVrednost);
             return retList;
         }
     }
