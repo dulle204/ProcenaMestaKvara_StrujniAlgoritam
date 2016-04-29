@@ -17,3 +17,14 @@ BEGIN
 	 [TimeStamp] DATETIME NOT NULL
 	)	
 END
+
+IF( NOT EXISTS( SELECT * FROM sys.tables WHERE name = 'Measurement'))
+BEGIN 
+	CREATE TABLE [Measurement]
+	(
+	 [ID] BIGINT PRIMARY KEY IDENTITY(1,1),
+	 [FaultID] BIGINT NOT NULL,
+	 [TimeStamp] DATETIME NOT NULL,
+	 CONSTRAINT FK_FaultLog FOREIGN KEY ([FaultID]) REFERENCES [FaultLog](ID)
+	)
+END
