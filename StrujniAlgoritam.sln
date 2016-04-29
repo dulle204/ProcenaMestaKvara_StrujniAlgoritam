@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication1", "WindowsFormsApplication1\WindowsFormsApplication1.csproj", "{0C27CFEF-C27F-45BF-A666-EEA8A1E2E115}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EES.UI", "WindowsFormsApplication1\EES.UI.csproj", "{0C27CFEF-C27F-45BF-A666-EEA8A1E2E115}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EES", "EES\EES.csproj", "{081C4BC0-3AE6-4AF7-82B6-9004286E4ADB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EES.DataAccess", "EES.DataAccess\EES.DataAccess.csproj", "{3E032C6C-3EB5-4CBC-9D64-444284941F68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{081C4BC0-3AE6-4AF7-82B6-9004286E4ADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{081C4BC0-3AE6-4AF7-82B6-9004286E4ADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{081C4BC0-3AE6-4AF7-82B6-9004286E4ADB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E032C6C-3EB5-4CBC-9D64-444284941F68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E032C6C-3EB5-4CBC-9D64-444284941F68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E032C6C-3EB5-4CBC-9D64-444284941F68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E032C6C-3EB5-4CBC-9D64-444284941F68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
