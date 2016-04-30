@@ -46,7 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="SQL\2016042901_CreateTableFaultLog.sql" />
-    <Content Include="SQL\2016042902_StoredProcInsertFaultLog.sql" />
+    <Content Include="SQL\2016042902_StoredProcs.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
