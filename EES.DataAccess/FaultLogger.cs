@@ -46,5 +46,7 @@ namespace EES.DataAccess
                 }
             }
         }
+
+        public List<FaultEvent>
     }
 }

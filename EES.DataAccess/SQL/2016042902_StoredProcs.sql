@@ -23,5 +23,15 @@ CREATE PROCEDURE InsertFaultLog
 		INSERT INTO dbo.[Measurement] values (@FID, @Current, @Timestamp);
 	END
 	
-    
-    
+	IF(EXISTS(SELECT * FROM sys.procedures WHERE name = 'GetFaultsWithMeasurement'))
+	BEGIN
+		DROP PROCEDURE [GetFaultsWithMeasurement]
+	END
+    GO
+    CREATE PROCEDURE [dbo].[GetFaultsWithMeasurement]
+	AS
+	 SELECT m.[ID] AS MeasurementID, m.[Current(A)], f.[ID] AS FaultID, f.[PrimaryLocations], f.[SecondaryLocations], m.[TimeStamp] 
+		FROM dbo.[Measurement] m
+		JOIN dbo.FaultLog f ON f.ID = m.FaultID
+
+GO
