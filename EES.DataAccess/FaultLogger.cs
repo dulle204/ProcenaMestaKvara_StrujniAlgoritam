@@ -47,6 +47,30 @@ namespace EES.DataAccess
             }
         }
 
-        public List<FaultEvent>
+        public List<FaultEventModel> GetReport()
+        {
+            List<FaultEventModel> retVal = new List<FaultEventModel>();
+            using (SqlConnection conn = new SqlConnection(DBConnection.GetConnectionString)) 
+            {
+                conn.Open();
+                using (SqlCommand cmd = new SqlCommand()) 
+                {
+                    cmd.Connection = conn;
+                    cmd.CommandText = @"GetFaultsWithMeasurement";
+                    cmd.CommandType = System.Data.CommandType.StoredProcedure;
+
+                    SqlDataReader reader = cmd.ExecuteReader(System.Data.CommandBehavior.CloseConnection);
+                    
+                    while (reader.Read())
+                    {
+                        FaultEventModel model = new FaultEventModel();
+                        model.Load(reader);
+                        retVal.Add(model);
+                    }
+                }
+            }
+
+            return retVal;
+        }
     }
 }
