@@ -52,6 +52,7 @@
     <Compile Include="ParoviStruja.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Proracuni.cs" />
+    <Compile Include="ReportHandler.cs" />
     <Compile Include="Vod.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
