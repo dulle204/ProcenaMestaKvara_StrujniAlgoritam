@@ -153,6 +153,11 @@ namespace WindowsFormsApplication1
             listaPotencijalnihLokacijaKvara = Proracuni.ProcenaMestaKvara(listaParova, merenaVrednost, ref listaSekundarnihLokacijaKvara);
 
             Prikaz(listaPotencijalnihLokacijaKvara, listaSekundarnihLokacijaKvara);            
-        }            
+        }
+
+        private void btn_ExportToCSV_Click(object sender, EventArgs e)
+        {
+            new ReportHandler().ExportToCSV();
+        }
     }
 }

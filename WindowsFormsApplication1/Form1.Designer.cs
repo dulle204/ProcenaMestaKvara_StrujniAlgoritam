@@ -48,6 +48,7 @@ namespace WindowsFormsApplication1
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.btn_ExportToCSV = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -171,7 +172,7 @@ namespace WindowsFormsApplication1
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(12, 125);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.Size = new System.Drawing.Size(87, 26);
             this.label6.TabIndex = 14;
             this.label6.Text = "Primarna lokacija\n kvara";
             // 
@@ -180,15 +181,26 @@ namespace WindowsFormsApplication1
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(9, 167);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.Size = new System.Drawing.Size(104, 26);
             this.label7.TabIndex = 15;
             this.label7.Text = "Sekundarna lokacija\n kvara";
+            // 
+            // btn_ExportToCSV
+            // 
+            this.btn_ExportToCSV.Location = new System.Drawing.Point(135, 243);
+            this.btn_ExportToCSV.Name = "btn_ExportToCSV";
+            this.btn_ExportToCSV.Size = new System.Drawing.Size(85, 23);
+            this.btn_ExportToCSV.TabIndex = 16;
+            this.btn_ExportToCSV.Text = "Export to CSV";
+            this.btn_ExportToCSV.UseVisualStyleBackColor = true;
+            this.btn_ExportToCSV.Click += new System.EventHandler(this.btn_ExportToCSV_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(675, 261);
+            this.ClientSize = new System.Drawing.Size(681, 271);
+            this.Controls.Add(this.btn_ExportToCSV);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -232,6 +244,7 @@ namespace WindowsFormsApplication1
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btn_ExportToCSV;
     }
 }
 
