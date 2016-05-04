@@ -19,7 +19,7 @@ namespace EES
             {
                 str.AppendLine(item.ID + "," + item.Current + "," + item.FaultID + "," + item.PrimaryLocations.Replace(',',' ') + "," + item.SecondaryLocations.Replace(',', ' ') + "," + item.TimeStamp);
             }
-            string fileName = "Report_" + "20160503" + ".csv";
+            string fileName = "Report_" + "20160503_" + Guid.NewGuid() + ".csv";
             System.IO.File.WriteAllText(@"D:\" + fileName , str.ToString());
         }
     }
