@@ -14,9 +14,7 @@ namespace EES.DataAccess
 
         private DBConnection()
         {
-#pragma warning disable CS0618 // Type or member is obsolete
-            _connString = "Data Source=DIVANISEVIC;Initial Catalog=EES;Integrated Security=True";//ConfigurationSettings.AppSettings["EES"].ToString();
-#pragma warning restore CS0618 // Type or member is obsolete
+            _connString = ConfigurationManager.ConnectionStrings["EES"].ConnectionString;
         }
 
         private static DBConnection _instance = null;
