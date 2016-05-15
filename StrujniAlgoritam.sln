@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EES", "EES\EES.csproj", "{0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EES.DataAccess", "EES.DataAccess\EES.DataAccess.csproj", "{3E032C6C-3EB5-4CBC-9D64-444284941F68}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EES.UnitTests", "EES.UnitTests\EES.UnitTests.csproj", "{4A6D395C-AF0D-42A2-ADE6-3CB910068634}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3E032C6C-3EB5-4CBC-9D64-444284941F68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E032C6C-3EB5-4CBC-9D64-444284941F68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E032C6C-3EB5-4CBC-9D64-444284941F68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A6D395C-AF0D-42A2-ADE6-3CB910068634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A6D395C-AF0D-42A2-ADE6-3CB910068634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A6D395C-AF0D-42A2-ADE6-3CB910068634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A6D395C-AF0D-42A2-ADE6-3CB910068634}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
